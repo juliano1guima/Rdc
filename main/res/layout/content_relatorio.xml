@@ -1,0 +1,2896 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/holo_blue_dark"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.rdc.relatoriodeconstrucao.Relatorio"
+    tools:showIn="@layout/activity_relatorio">
+
+    <ScrollView
+        android:id="@+id/scrollView3"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_gravity="center"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        app:layout_constraintDimensionRatio="w,1:1"
+        tools:layout_editor_absoluteX="8dp"
+        tools:layout_editor_absoluteY="8dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="3dp"
+            android:orientation="vertical">
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/card_view0"
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:layout_gravity="top"
+                android:layout_margin="5dp"
+                android:layout_marginTop="10dp"
+                app:cardBackgroundColor="@android:color/background_light"
+                card_view:cardCornerRadius="20dp"
+                card_view:cardElevation="12dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal">
+
+                    <Button
+                        android:id="@+id/btnlogo"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginTop="22dp"
+                        android:background="@drawable/mybutton"
+                        android:padding="10dp"
+                        android:text="Carregar Logo"
+                        android:textColor="#ffffff" />
+
+                    <ImageView
+                        android:id="@+id/imglogo"
+                        android:layout_width="190dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginRight="5dp" />
+
+                </LinearLayout>
+
+
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/card_view1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="top"
+                android:layout_margin="5dp"
+                android:layout_marginTop="10dp"
+                app:cardBackgroundColor="@android:color/background_light"
+                card_view:cardCornerRadius="20dp"
+                card_view:cardElevation="12dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginRight="7dp"
+                        android:orientation="vertical">
+
+                        <EditText
+                            android:id="@+id/edtfoco"
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:layout_weight="1"
+                            android:ems="2"
+                            android:inputType="textPersonName" />
+
+                        <TextView
+                            android:id="@+id/textTitulo"
+                            android:layout_width="wrap_content"
+                            android:layout_height="40dp"
+                            android:layout_marginLeft="5dp"
+                            android:layout_marginTop="10dp"
+                            android:gravity="center_vertical"
+                            android:text="Dados da Obra"
+                            android:textColor="#505daf"
+                            android:textSize="20dp"
+                            android:textStyle="bold" />
+
+                    </LinearLayout>
+
+                    <com.rengwuxian.materialedittext.MaterialEditText
+                        android:id="@+id/edtobra"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="25dp"
+                        android:layout_marginRight="25dp"
+                        android:layout_marginTop="18dp"
+                        android:background="#fafafa"
+                        android:hint="Obra"
+                        android:imeActionLabel="Próximo"
+                        android:imeOptions="actionNext"
+                        android:inputType="textImeMultiLine"
+                        app:met_floatingLabel="highlight"
+                        app:met_floatingLabelText="Obra:"
+                        app:met_floatingLabelTextColor="@color/colorPrimaryDark" />
+
+                    <com.rengwuxian.materialedittext.MaterialEditText
+                        android:id="@+id/edtconst"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="25dp"
+                        android:layout_marginRight="25dp"
+                        android:layout_marginTop="18dp"
+                        android:background="#fafafa"
+                        android:hint="Empresa Executora / Construtora"
+                        android:imeActionLabel="Próximo"
+                        android:imeOptions="actionNext"
+                        android:inputType="textImeMultiLine"
+                        app:met_floatingLabel="highlight"
+                        app:met_floatingLabelText="Empresa Executora / Construtora:"
+                        app:met_floatingLabelTextColor="@color/colorPrimaryDark" />
+
+                    <com.rengwuxian.materialedittext.MaterialEditText
+                        android:id="@+id/edtendereco"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="25dp"
+                        android:layout_marginRight="25dp"
+                        android:layout_marginTop="18dp"
+                        android:background="#fafafa"
+                        android:hint="Rua"
+                        android:imeActionLabel="Próximo"
+                        android:imeOptions="actionNext"
+                        android:inputType="textImeMultiLine"
+                        app:met_floatingLabel="highlight"
+                        app:met_floatingLabelText="Rua:"
+                        app:met_floatingLabelTextColor="@color/colorPrimaryDark" />
+
+                    <com.rengwuxian.materialedittext.MaterialEditText
+                        android:id="@+id/edtnumero"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="25dp"
+                        android:layout_marginRight="25dp"
+                        android:layout_marginTop="18dp"
+                        android:background="#fafafa"
+                        android:hint="Nº"
+                        android:imeActionLabel="Próximo"
+                        android:imeOptions="actionNext"
+                        android:inputType="number"
+                        app:met_floatingLabel="highlight"
+                        app:met_floatingLabelText="N°:"
+                        app:met_floatingLabelTextColor="@color/colorPrimaryDark" />
+
+                    <com.rengwuxian.materialedittext.MaterialEditText
+                        android:id="@+id/edtcidade"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="25dp"
+                        android:layout_marginRight="25dp"
+                        android:layout_marginTop="18dp"
+                        android:background="#fafafa"
+                        android:hint="Cidade"
+                        android:imeActionLabel="Próximo"
+                        android:imeOptions="actionNext"
+                        android:inputType="textImeMultiLine"
+                        app:met_floatingLabel="highlight"
+                        app:met_floatingLabelText="Cidade:"
+                        app:met_floatingLabelTextColor="@color/colorPrimaryDark" />
+
+                    <com.weiwangcn.betterspinner.library.material.MaterialBetterSpinner
+                        android:id="@+id/spnesatdo"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="20dp"
+                        android:layout_marginLeft="25dp"
+                        android:layout_marginRight="25dp"
+                        android:layout_marginTop="8dp"
+                        android:background="#fafafa"
+                        android:hint="Estado"
+                        app:met_floatingLabel="highlight"
+                        app:met_floatingLabelText="Estado:"
+                        app:met_floatingLabelTextColor="@color/colorPrimaryDark" />
+
+
+                </LinearLayout>
+
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/card_view2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="top"
+                android:layout_margin="5dp"
+                android:layout_marginTop="10dp"
+                app:cardBackgroundColor="@android:color/background_light"
+                card_view:cardCornerRadius="20dp"
+                card_view:cardElevation="12dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginRight="7dp"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/textTitulo2"
+                            android:layout_width="match_parent"
+                            android:layout_height="40dp"
+                            android:layout_marginLeft="5dp"
+                            android:layout_marginTop="10dp"
+                            android:gravity="center_vertical"
+                            android:text="Dados do Relatório"
+                            android:textColor="#505daf"
+                            android:textSize="20dp"
+                            android:textStyle="bold" />
+                    </LinearLayout>
+
+
+                    <com.weiwangcn.betterspinner.library.material.MaterialBetterSpinner
+                        android:id="@+id/spncondclimatica1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="25dp"
+                        android:layout_marginRight="25dp"
+                        android:layout_marginTop="8dp"
+                        android:background="#fafafa"
+                        android:hint="Condição Climática - Manhã"
+                        app:met_floatingLabel="highlight"
+                        app:met_floatingLabelText="Condição Climática - Manhã:"
+                        app:met_floatingLabelTextColor="@color/colorPrimaryDark" />
+
+                    <com.weiwangcn.betterspinner.library.material.MaterialBetterSpinner
+                        android:id="@+id/spncondclimatica2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="25dp"
+                        android:layout_marginRight="25dp"
+                        android:layout_marginTop="8dp"
+                        android:background="#fafafa"
+                        android:hint="Condição Climática - Tarde"
+                        app:met_floatingLabel="highlight"
+                        app:met_floatingLabelText="Condição Climática - Tarde:"
+                        app:met_floatingLabelTextColor="@color/colorPrimaryDark" />
+
+                    <com.rengwuxian.materialedittext.MaterialEditText
+                        android:id="@+id/edtdatarel"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="25dp"
+                        android:layout_marginRight="25dp"
+                        android:layout_marginTop="18dp"
+                        android:background="#fafafa"
+                        android:hint="Data do Relatório"
+                        android:imeActionLabel="Próximo"
+                        android:imeOptions="actionNext"
+                        android:inputType="textImeMultiLine"
+                        app:met_floatingLabel="highlight"
+                        app:met_floatingLabelText="Data do Relatório:"
+                        app:met_floatingLabelTextColor="@color/colorPrimaryDark" />
+
+
+                    <com.rengwuxian.materialedittext.MaterialEditText
+                        android:id="@+id/edtdatainicio"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="25dp"
+                        android:layout_marginRight="25dp"
+                        android:layout_marginTop="18dp"
+                        android:background="#fafafa"
+                        android:hint="Data de Inicio da Obra"
+                        android:imeActionLabel="Próximo"
+                        android:imeOptions="actionNext"
+                        android:inputType="textImeMultiLine"
+                        app:met_floatingLabel="highlight"
+                        app:met_floatingLabelText="Data de Inicio da Obra:"
+                        app:met_floatingLabelTextColor="@color/colorPrimaryDark" />
+
+                    <com.rengwuxian.materialedittext.MaterialEditText
+                        android:id="@+id/edtdataentrega"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="20dp"
+                        android:layout_marginLeft="25dp"
+                        android:layout_marginRight="25dp"
+                        android:layout_marginTop="18dp"
+                        android:background="#fafafa"
+                        android:hint="Previsão de Entrega da Obra"
+                        android:imeActionLabel="Próximo"
+                        android:imeOptions="actionNext"
+                        android:inputType="textImeMultiLine"
+                        app:met_floatingLabel="highlight"
+                        app:met_floatingLabelText="Previsão de Entrega da Obra:"
+                        app:met_floatingLabelTextColor="@color/colorPrimaryDark" />
+
+                </LinearLayout>
+
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/card_view3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="top"
+                android:layout_margin="5dp"
+                android:layout_marginTop="10dp"
+                app:cardBackgroundColor="@android:color/background_light"
+                card_view:cardCornerRadius="20dp"
+                card_view:cardElevation="12dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginRight="7dp"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/textTitulo3"
+                            android:layout_width="match_parent"
+                            android:layout_height="40dp"
+                            android:layout_marginLeft="5dp"
+                            android:layout_marginTop="10dp"
+                            android:gravity="center_vertical"
+                            android:text="Máquinas em Obra"
+                            android:textColor="#505daf"
+                            android:textSize="20dp"
+                            android:textStyle="bold" />
+                    </LinearLayout>
+
+
+                    <com.rengwuxian.materialedittext.MaterialEditText
+                        android:id="@+id/edtcambet"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="25dp"
+                        android:layout_marginRight="25dp"
+                        android:layout_marginTop="18dp"
+                        android:background="#fafafa"
+                        android:hint="Qtd. Caminhões Betoneira"
+                        android:imeActionLabel="Próximo"
+                        android:imeOptions="actionNext"
+                        android:inputType="number"
+                        app:met_floatingLabel="highlight"
+                        app:met_floatingLabelText="Qtd. Caminhões Betoneira:"
+                        app:met_floatingLabelTextColor="@color/colorPrimaryDark" />
+
+                    <com.rengwuxian.materialedittext.MaterialEditText
+                        android:id="@+id/edtbombconc"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="25dp"
+                        android:layout_marginRight="25dp"
+                        android:layout_marginTop="10dp"
+                        android:background="#fafafa"
+                        android:hint="Qtd. Bomba de Concreto"
+                        android:imeActionLabel="Próximo"
+                        android:imeOptions="actionNext"
+                        android:inputType="number"
+                        app:met_floatingLabel="highlight"
+                        app:met_floatingLabelText="Qtd. Bomba de Concreto:"
+                        app:met_floatingLabelTextColor="@color/colorPrimaryDark" />
+
+                    <com.rengwuxian.materialedittext.MaterialEditText
+                        android:id="@+id/edtretroescavadeira"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="25dp"
+                        android:layout_marginRight="25dp"
+                        android:layout_marginTop="10dp"
+                        android:background="#fafafa"
+                        android:hint="Qtd. Retroescavadeira"
+                        android:imeActionLabel="Próximo"
+                        android:imeOptions="actionNext"
+                        android:inputType="number"
+                        app:met_floatingLabel="highlight"
+                        app:met_floatingLabelText="Qtd. Retroescavadeira:"
+                        app:met_floatingLabelTextColor="@color/colorPrimaryDark" />
+
+                    <com.rengwuxian.materialedittext.MaterialEditText
+                        android:id="@+id/edtescavadeira"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="25dp"
+                        android:layout_marginRight="25dp"
+                        android:layout_marginTop="10dp"
+                        android:background="#fafafa"
+                        android:hint="Qtd. Escavadeira Hidráulica"
+                        android:imeActionLabel="Próximo"
+                        android:imeOptions="actionNext"
+                        android:inputType="number"
+                        app:met_floatingLabel="highlight"
+                        app:met_floatingLabelText="Qtd. Escavadeira Hidráulica:"
+                        app:met_floatingLabelTextColor="@color/colorPrimaryDark" />
+
+                    <com.rengwuxian.materialedittext.MaterialEditText
+                        android:id="@+id/edtrolopneu"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="25dp"
+                        android:layout_marginRight="25dp"
+                        android:layout_marginTop="10dp"
+                        android:background="#fafafa"
+                        android:hint="Qtd. Rolo Pneumático"
+                        android:imeActionLabel="Próximo"
+                        android:imeOptions="actionNext"
+                        android:inputType="number"
+                        app:met_floatingLabel="highlight"
+                        app:met_floatingLabelText="Qtd. Rolo Pneumático:"
+                        app:met_floatingLabelTextColor="@color/colorPrimaryDark" />
+
+                    <com.rengwuxian.materialedittext.MaterialEditText
+                        android:id="@+id/edtplataforma"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="25dp"
+                        android:layout_marginRight="25dp"
+                        android:layout_marginTop="10dp"
+                        android:background="#fafafa"
+                        android:hint="Qtd. Plataforma Elevatória"
+                        android:imeActionLabel="Próximo"
+                        android:imeOptions="actionNext"
+                        android:inputType="number"
+                        app:met_floatingLabel="highlight"
+                        app:met_floatingLabelText="Qtd. Plataforma Elevatória:"
+                        app:met_floatingLabelTextColor="@color/colorPrimaryDark" />
+
+                    <com.rengwuxian.materialedittext.MaterialEditText
+                        android:id="@+id/edtacabadora"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="25dp"
+                        android:layout_marginRight="25dp"
+                        android:layout_marginTop="10dp"
+                        android:background="#fafafa"
+                        android:hint="Qtd. Acabadora de Asfalto"
+                        android:imeActionLabel="Próximo"
+                        android:imeOptions="actionNext"
+                        android:inputType="number"
+                        app:met_floatingLabel="highlight"
+                        app:met_floatingLabelText="Qtd. Acabadora de Asfalto:"
+                        app:met_floatingLabelTextColor="@color/colorPrimaryDark" />
+
+                    <com.rengwuxian.materialedittext.MaterialEditText
+                        android:id="@+id/edtespargidor"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="25dp"
+                        android:layout_marginRight="25dp"
+                        android:layout_marginTop="10dp"
+                        android:background="#fafafa"
+                        android:hint="Qtd. Caminhão Espargidor"
+                        android:imeActionLabel="Próximo"
+                        android:imeOptions="actionNext"
+                        android:inputType="number"
+                        app:met_floatingLabel="highlight"
+                        app:met_floatingLabelText="Qtd. Caminhão Espargidor:"
+                        app:met_floatingLabelTextColor="@color/colorPrimaryDark" />
+
+                    <com.rengwuxian.materialedittext.MaterialEditText
+                        android:id="@+id/edttandem"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="25dp"
+                        android:layout_marginRight="25dp"
+                        android:layout_marginTop="10dp"
+                        android:background="#fafafa"
+                        android:hint="Qtd. Rolo Tandem"
+                        android:imeActionLabel="Próximo"
+                        android:imeOptions="actionNext"
+                        android:inputType="number"
+                        app:met_floatingLabel="highlight"
+                        app:met_floatingLabelText="Qtd. Rolo Tandem:"
+                        app:met_floatingLabelTextColor="@color/colorPrimaryDark" />
+
+                    <com.rengwuxian.materialedittext.MaterialEditText
+                        android:id="@+id/edtguindaste"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="25dp"
+                        android:layout_marginRight="25dp"
+                        android:layout_marginTop="10dp"
+                        android:background="#fafafa"
+                        android:hint="Qtd. Guindaste"
+                        android:imeActionLabel="Próximo"
+                        android:imeOptions="actionNext"
+                        android:inputType="number"
+                        app:met_floatingLabel="highlight"
+                        app:met_floatingLabelText="Qtd. Guindaste:"
+                        app:met_floatingLabelTextColor="@color/colorPrimaryDark" />
+
+                    <com.rengwuxian.materialedittext.MaterialEditText
+                        android:id="@+id/edtpacarregadeira"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="25dp"
+                        android:layout_marginRight="25dp"
+                        android:layout_marginTop="10dp"
+                        android:background="#fafafa"
+                        android:hint="Qtd. Pá-carregadeira"
+                        android:imeActionLabel="Próximo"
+                        android:imeOptions="actionNext"
+                        android:inputType="number"
+                        app:met_floatingLabel="highlight"
+                        app:met_floatingLabelText="Qtd. Pá-carregadeira:"
+                        app:met_floatingLabelTextColor="@color/colorPrimaryDark" />
+
+                    <com.rengwuxian.materialedittext.MaterialEditText
+                        android:id="@+id/edtbob"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="25dp"
+                        android:layout_marginRight="25dp"
+                        android:layout_marginTop="10dp"
+                        android:background="#fafafa"
+                        android:hint="Qtd. BobCat"
+                        android:imeActionLabel="Próximo"
+                        android:imeOptions="actionNext"
+                        android:inputType="number"
+                        app:met_floatingLabel="highlight"
+                        app:met_floatingLabelText="Qtd. BobCat:"
+                        app:met_floatingLabelTextColor="@color/colorPrimaryDark" />
+
+                    <com.rengwuxian.materialedittext.MaterialEditText
+                        android:id="@+id/edtpatrol"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="25dp"
+                        android:layout_marginRight="25dp"
+                        android:layout_marginTop="10dp"
+                        android:background="#fafafa"
+                        android:hint="Qtd. Patrol"
+                        android:imeActionLabel="Próximo"
+                        android:imeOptions="actionNext"
+                        android:inputType="number"
+                        app:met_floatingLabel="highlight"
+                        app:met_floatingLabelText="Qtd. Patrol:"
+                        app:met_floatingLabelTextColor="@color/colorPrimaryDark" />
+
+                    <com.rengwuxian.materialedittext.MaterialEditText
+                        android:id="@+id/edtcompactador"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="25dp"
+                        android:layout_marginRight="25dp"
+                        android:layout_marginTop="10dp"
+                        android:background="#fafafa"
+                        android:hint="Qtd. Rolo compactador"
+                        android:imeActionLabel="Próximo"
+                        android:imeOptions="actionNext"
+                        android:inputType="number"
+                        app:met_floatingLabel="highlight"
+                        app:met_floatingLabelText="Qtd. Rolo compactador:"
+                        app:met_floatingLabelTextColor="@color/colorPrimaryDark" />
+
+                    <com.rengwuxian.materialedittext.MaterialEditText
+                        android:id="@+id/edtpipa"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="25dp"
+                        android:layout_marginRight="25dp"
+                        android:layout_marginTop="10dp"
+                        android:background="#fafafa"
+                        android:hint="Qtd. Caminhão Pipa"
+                        android:imeActionLabel="Próximo"
+                        android:imeOptions="actionNext"
+                        android:inputType="number"
+                        app:met_floatingLabel="highlight"
+                        app:met_floatingLabelText="Qtd. Caminhão Pipa:"
+                        app:met_floatingLabelTextColor="@color/colorPrimaryDark" />
+
+                    <com.rengwuxian.materialedittext.MaterialEditText
+                        android:id="@+id/edtmunck"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="25dp"
+                        android:layout_marginRight="25dp"
+                        android:layout_marginTop="10dp"
+                        android:background="#fafafa"
+                        android:hint="Qtd. Caminhão Munck"
+                        android:imeActionLabel="Próximo"
+                        android:imeOptions="actionNext"
+                        android:inputType="number"
+                        app:met_floatingLabel="highlight"
+                        app:met_floatingLabelText="Qtd. Caminhão Munck:"
+                        app:met_floatingLabelTextColor="@color/colorPrimaryDark" />
+
+                    <com.rengwuxian.materialedittext.MaterialEditText
+                        android:id="@+id/edtcacamba"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="20dp"
+                        android:layout_marginLeft="25dp"
+                        android:layout_marginRight="25dp"
+                        android:layout_marginTop="10dp"
+                        android:background="#fafafa"
+                        android:hint="Qtd. Caminhão Caçamba"
+                        android:imeActionLabel="Próximo"
+                        android:imeOptions="actionNext"
+                        android:inputType="number"
+                        app:met_floatingLabel="highlight"
+                        app:met_floatingLabelText="Qtd. Caminhão Caçamba:"
+                        app:met_floatingLabelTextColor="@color/colorPrimaryDark" />
+
+
+                </LinearLayout>
+
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/card_view4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="top"
+                android:layout_margin="5dp"
+                android:layout_marginTop="10dp"
+                app:cardBackgroundColor="@android:color/background_light"
+                card_view:cardCornerRadius="20dp"
+                card_view:cardElevation="12dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginRight="7dp"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/textTitulo4"
+                            android:layout_width="match_parent"
+                            android:layout_height="40dp"
+                            android:layout_marginLeft="5dp"
+                            android:layout_marginTop="10dp"
+                            android:gravity="center_vertical"
+                            android:text="Equipe de Obra - Quantitativo"
+                            android:textColor="#505daf"
+                            android:textSize="20dp"
+                            android:textStyle="bold" />
+                    </LinearLayout>
+
+                    <com.rengwuxian.materialedittext.MaterialEditText
+                        android:id="@+id/edteng"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="25dp"
+                        android:layout_marginRight="25dp"
+                        android:layout_marginTop="10dp"
+                        android:background="#fafafa"
+                        android:hint="Engenheiro"
+                        android:imeActionLabel="Próximo"
+                        android:imeOptions="actionNext"
+                        android:inputType="number"
+                        app:met_floatingLabel="highlight"
+                        app:met_floatingLabelText="Engenheiro:"
+                        app:met_floatingLabelTextColor="@color/colorPrimaryDark" />
+
+                    <com.rengwuxian.materialedittext.MaterialEditText
+                        android:id="@+id/edtassisteng"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="20dp"
+                        android:layout_marginLeft="25dp"
+                        android:layout_marginRight="25dp"
+                        android:layout_marginTop="10dp"
+                        android:background="#fafafa"
+                        android:hint="Assistente de Engenheiro"
+                        android:imeActionLabel="Próximo"
+                        android:imeOptions="actionNext"
+                        android:inputType="number"
+                        app:met_floatingLabel="highlight"
+                        app:met_floatingLabelText="Assistente de Engenheiro:"
+                        app:met_floatingLabelTextColor="@color/colorPrimaryDark" />
+
+                    <com.rengwuxian.materialedittext.MaterialEditText
+                        android:id="@+id/edtmestre"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="20dp"
+                        android:layout_marginLeft="25dp"
+                        android:layout_marginRight="25dp"
+                        android:layout_marginTop="10dp"
+                        android:background="#fafafa"
+                        android:hint="Mestre de Obra - Encarregado Geral"
+                        android:imeActionLabel="Próximo"
+                        android:imeOptions="actionNext"
+                        android:inputType="number"
+                        app:met_floatingLabel="highlight"
+                        app:met_floatingLabelText="Mestre de Obra - Encarregado Geral:"
+                        app:met_floatingLabelTextColor="@color/colorPrimaryDark" />
+
+
+                    <com.rengwuxian.materialedittext.MaterialEditText
+                        android:id="@+id/edtencforma"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="25dp"
+                        android:layout_marginRight="25dp"
+                        android:layout_marginTop="10dp"
+                        android:background="#fafafa"
+                        android:hint="Encarregado Forma"
+                        android:imeActionLabel="Próximo"
+                        android:imeOptions="actionNext"
+                        android:inputType="number"
+                        app:met_floatingLabel="highlight"
+                        app:met_floatingLabelText="Encarregado Forma:"
+                        app:met_floatingLabelTextColor="@color/colorPrimaryDark" />
+
+                    <com.rengwuxian.materialedittext.MaterialEditText
+                        android:id="@+id/edtcarp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="25dp"
+                        android:layout_marginRight="25dp"
+                        android:layout_marginTop="10dp"
+                        android:background="#fafafa"
+                        android:hint="Carpinteiro"
+                        android:imeActionLabel="Próximo"
+                        android:imeOptions="actionNext"
+                        android:inputType="number"
+                        app:met_floatingLabel="highlight"
+                        app:met_floatingLabelText="Carpinteiro:"
+                        app:met_floatingLabelTextColor="@color/colorPrimaryDark" />
+
+                    <com.rengwuxian.materialedittext.MaterialEditText
+                        android:id="@+id/edtajudcarp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="20dp"
+                        android:layout_marginLeft="25dp"
+                        android:layout_marginRight="25dp"
+                        android:layout_marginTop="10dp"
+                        android:background="#fafafa"
+                        android:hint="Ajudante de Carpinteiro"
+                        android:imeActionLabel="Próximo"
+                        android:imeOptions="actionNext"
+                        android:inputType="number"
+                        app:met_floatingLabel="highlight"
+                        app:met_floatingLabelText="Ajudante de Carpinteiro:"
+                        app:met_floatingLabelTextColor="@color/colorPrimaryDark" />
+
+                    <com.rengwuxian.materialedittext.MaterialEditText
+                        android:id="@+id/edtencarm"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="25dp"
+                        android:layout_marginRight="25dp"
+                        android:layout_marginTop="10dp"
+                        android:background="#fafafa"
+                        android:hint="Encarregado Armação"
+                        android:imeActionLabel="Próximo"
+                        android:imeOptions="actionNext"
+                        android:inputType="number"
+                        app:met_floatingLabel="highlight"
+                        app:met_floatingLabelText="Encarregado Armação:"
+                        app:met_floatingLabelTextColor="@color/colorPrimaryDark" />
+
+                    <com.rengwuxian.materialedittext.MaterialEditText
+                        android:id="@+id/edtarm"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="25dp"
+                        android:layout_marginRight="25dp"
+                        android:layout_marginTop="10dp"
+                        android:background="#fafafa"
+                        android:hint="Armador"
+                        android:imeActionLabel="Próximo"
+                        android:imeOptions="actionNext"
+                        android:inputType="number"
+                        app:met_floatingLabel="highlight"
+                        app:met_floatingLabelText="Armador:"
+                        app:met_floatingLabelTextColor="@color/colorPrimaryDark" />
+
+                    <com.rengwuxian.materialedittext.MaterialEditText
+                        android:id="@+id/edtajudarm"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="20dp"
+                        android:layout_marginLeft="25dp"
+                        android:layout_marginRight="25dp"
+                        android:layout_marginTop="10dp"
+                        android:background="#fafafa"
+                        android:hint="Ajudante de Armador"
+                        android:imeActionLabel="Próximo"
+                        android:imeOptions="actionNext"
+                        android:inputType="number"
+                        app:met_floatingLabel="highlight"
+                        app:met_floatingLabelText="Ajudante de Armador:"
+                        app:met_floatingLabelTextColor="@color/colorPrimaryDark" />
+
+                    <com.rengwuxian.materialedittext.MaterialEditText
+                        android:id="@+id/edtencped"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="25dp"
+                        android:layout_marginRight="25dp"
+                        android:layout_marginTop="10dp"
+                        android:background="#fafafa"
+                        android:hint="Encarregado Pedreiro"
+                        android:imeActionLabel="Próximo"
+                        android:imeOptions="actionNext"
+                        android:inputType="number"
+                        app:met_floatingLabel="highlight"
+                        app:met_floatingLabelText="Encarregado Pedreiro:"
+                        app:met_floatingLabelTextColor="@color/colorPrimaryDark" />
+
+                    <com.rengwuxian.materialedittext.MaterialEditText
+                        android:id="@+id/edtped"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="25dp"
+                        android:layout_marginRight="25dp"
+                        android:layout_marginTop="10dp"
+                        android:background="#fafafa"
+                        android:hint="Pedreiro"
+                        android:imeActionLabel="Próximo"
+                        android:imeOptions="actionNext"
+                        android:inputType="number"
+                        app:met_floatingLabel="highlight"
+                        app:met_floatingLabelText="Pedreiro:"
+                        app:met_floatingLabelTextColor="@color/colorPrimaryDark" />
+
+                    <com.rengwuxian.materialedittext.MaterialEditText
+                        android:id="@+id/edtajudped"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="20dp"
+                        android:layout_marginLeft="25dp"
+                        android:layout_marginRight="25dp"
+                        android:layout_marginTop="10dp"
+                        android:background="#fafafa"
+                        android:hint="Ajudante de Pedreiro"
+                        android:imeActionLabel="Próximo"
+                        android:imeOptions="actionNext"
+                        android:inputType="number"
+                        app:met_floatingLabel="highlight"
+                        app:met_floatingLabelText="Ajudante de Pedreiro:"
+                        app:met_floatingLabelTextColor="@color/colorPrimaryDark" />
+
+                    <com.rengwuxian.materialedittext.MaterialEditText
+                        android:id="@+id/edtencelet"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="25dp"
+                        android:layout_marginRight="25dp"
+                        android:layout_marginTop="10dp"
+                        android:background="#fafafa"
+                        android:hint="Encarregado Eletricista"
+                        android:imeActionLabel="Próximo"
+                        android:imeOptions="actionNext"
+                        android:inputType="number"
+                        app:met_floatingLabel="highlight"
+                        app:met_floatingLabelText="Encarregado Eletricista:"
+                        app:met_floatingLabelTextColor="@color/colorPrimaryDark" />
+
+                    <com.rengwuxian.materialedittext.MaterialEditText
+                        android:id="@+id/edtelet"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="25dp"
+                        android:layout_marginRight="25dp"
+                        android:layout_marginTop="10dp"
+                        android:background="#fafafa"
+                        android:hint="Eletricista"
+                        android:imeActionLabel="Próximo"
+                        android:imeOptions="actionNext"
+                        android:inputType="number"
+                        app:met_floatingLabel="highlight"
+                        app:met_floatingLabelText="Eletricista:"
+                        app:met_floatingLabelTextColor="@color/colorPrimaryDark" />
+
+                    <com.rengwuxian.materialedittext.MaterialEditText
+                        android:id="@+id/edtajudelet"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="20dp"
+                        android:layout_marginLeft="25dp"
+                        android:layout_marginRight="25dp"
+                        android:layout_marginTop="10dp"
+                        android:background="#fafafa"
+                        android:hint="Ajudante de Eletricista"
+                        android:imeActionLabel="Próximo"
+                        android:imeOptions="actionNext"
+                        android:inputType="number"
+                        app:met_floatingLabel="highlight"
+                        app:met_floatingLabelText="Ajudante de Eletricista:"
+                        app:met_floatingLabelTextColor="@color/colorPrimaryDark" />
+
+                    <com.rengwuxian.materialedittext.MaterialEditText
+                        android:id="@+id/edtencpint"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="25dp"
+                        android:layout_marginRight="25dp"
+                        android:layout_marginTop="10dp"
+                        android:background="#fafafa"
+                        android:hint="Encarregado Pintor"
+                        android:imeActionLabel="Próximo"
+                        android:imeOptions="actionNext"
+                        android:inputType="number"
+                        app:met_floatingLabel="highlight"
+                        app:met_floatingLabelText="Encarregado Pintor:"
+                        app:met_floatingLabelTextColor="@color/colorPrimaryDark" />
+
+                    <com.rengwuxian.materialedittext.MaterialEditText
+                        android:id="@+id/edtpint"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="25dp"
+                        android:layout_marginRight="25dp"
+                        android:layout_marginTop="10dp"
+                        android:background="#fafafa"
+                        android:hint="Pintor"
+                        android:imeActionLabel="Próximo"
+                        android:imeOptions="actionNext"
+                        android:inputType="number"
+                        app:met_floatingLabel="highlight"
+                        app:met_floatingLabelText="Pintor:"
+                        app:met_floatingLabelTextColor="@color/colorPrimaryDark" />
+
+                    <com.rengwuxian.materialedittext.MaterialEditText
+                        android:id="@+id/edtajudpint"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="20dp"
+                        android:layout_marginLeft="25dp"
+                        android:layout_marginRight="25dp"
+                        android:layout_marginTop="10dp"
+                        android:background="#fafafa"
+                        android:hint="Ajudante de Pintor"
+                        android:imeActionLabel="Próximo"
+                        android:imeOptions="actionNext"
+                        android:inputType="number"
+                        app:met_floatingLabel="highlight"
+                        app:met_floatingLabelText="Ajudante de Pintor:"
+                        app:met_floatingLabelTextColor="@color/colorPrimaryDark" />
+
+                    <com.rengwuxian.materialedittext.MaterialEditText
+                        android:id="@+id/edtencencanador"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="25dp"
+                        android:layout_marginRight="25dp"
+                        android:layout_marginTop="10dp"
+                        android:background="#fafafa"
+                        android:hint="Encarregado Encanador"
+                        android:imeActionLabel="Próximo"
+                        android:imeOptions="actionNext"
+                        android:inputType="number"
+                        app:met_floatingLabel="highlight"
+                        app:met_floatingLabelText="Encarregado Encanador:"
+                        app:met_floatingLabelTextColor="@color/colorPrimaryDark" />
+
+                    <com.rengwuxian.materialedittext.MaterialEditText
+                        android:id="@+id/edtenc"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="25dp"
+                        android:layout_marginRight="25dp"
+                        android:layout_marginTop="10dp"
+                        android:background="#fafafa"
+                        android:hint="Encanador"
+                        android:imeActionLabel="Próximo"
+                        android:imeOptions="actionNext"
+                        android:inputType="number"
+                        app:met_floatingLabel="highlight"
+                        app:met_floatingLabelText="Encanador:"
+                        app:met_floatingLabelTextColor="@color/colorPrimaryDark" />
+
+                    <com.rengwuxian.materialedittext.MaterialEditText
+                        android:id="@+id/edtajudenc"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="20dp"
+                        android:layout_marginLeft="25dp"
+                        android:layout_marginRight="25dp"
+                        android:layout_marginTop="10dp"
+                        android:background="#fafafa"
+                        android:hint="Ajudante de Encanador"
+                        android:imeActionLabel="Próximo"
+                        android:imeOptions="actionNext"
+                        android:inputType="number"
+                        app:met_floatingLabel="highlight"
+                        app:met_floatingLabelText="Ajudante de Encanador:"
+                        app:met_floatingLabelTextColor="@color/colorPrimaryDark" />
+
+                </LinearLayout>
+
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/card_view5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="top"
+                android:layout_margin="5dp"
+                android:layout_marginTop="10dp"
+                app:cardBackgroundColor="@android:color/background_light"
+                card_view:cardCornerRadius="20dp"
+                card_view:cardElevation="12dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginRight="7dp"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/textTitulo5"
+                            android:layout_width="match_parent"
+                            android:layout_height="40dp"
+                            android:layout_marginLeft="5dp"
+                            android:layout_marginTop="10dp"
+                            android:gravity="center_vertical"
+                            android:text="Registro Fotográfico 1"
+                            android:textColor="#505daf"
+                            android:textSize="20dp"
+                            android:textStyle="bold" />
+                    </LinearLayout>
+
+                    <ImageView
+                        android:id="@+id/imgfoto1"
+                        android:layout_width="match_parent"
+                        android:layout_height="300dp"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_marginRight="5dp"
+                        android:background="#ffffff"
+                        android:src="@drawable/semreg" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginRight="7dp"
+                        android:gravity="center_vertical|center_horizontal"
+                        android:orientation="horizontal">
+
+                        <Button
+                            android:id="@+id/btnfoto1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_horizontal"
+                            android:background="@android:drawable/ic_menu_camera"
+                            android:gravity="center_vertical|center_horizontal"
+                            android:minWidth="48dip"
+                            android:nestedScrollingEnabled="false" />
+
+                        <Button
+                            android:id="@+id/btngaleria1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_horizontal"
+                            android:layout_marginLeft="40dp"
+                            android:background="@android:drawable/ic_menu_gallery"
+                            android:gravity="center_vertical|center_horizontal"
+                            android:minWidth="48dip"
+                            android:nestedScrollingEnabled="false" />
+
+                        <Button
+                            android:id="@+id/btnexc1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_horizontal"
+                            android:layout_marginLeft="40dp"
+                            android:background="@android:drawable/ic_menu_delete"
+                            android:gravity="center_vertical|center_horizontal"
+                            android:minWidth="48dip"
+                            android:nestedScrollingEnabled="false"
+                            android:singleLine="false" />
+                    </LinearLayout>
+
+                    <com.weiwangcn.betterspinner.library.material.MaterialBetterSpinner
+                        android:id="@+id/spnareaobra1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="25dp"
+                        android:layout_marginRight="25dp"
+                        android:layout_marginTop="8dp"
+                        android:background="#fafafa"
+                        android:hint="Etapa da Obra"
+                        app:met_floatingLabel="highlight"
+                        app:met_floatingLabelText="Etapa da Obra:"
+                        app:met_floatingLabelTextColor="@color/colorPrimaryDark" />
+
+                    <com.rengwuxian.materialedittext.MaterialEditText
+                        android:id="@+id/edtcomentariofoto1a"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="25dp"
+                        android:layout_marginRight="25dp"
+                        android:layout_marginTop="8dp"
+                        android:background="#fafafa"
+                        android:hint="Comentário:"
+                        android:imeActionLabel="Próximo"
+                        android:imeOptions="actionNext"
+                        android:inputType="textImeMultiLine"
+                        android:maxLength="35"
+                        app:met_floatingLabel="highlight"
+                        app:met_floatingLabelText="Comentário:"
+                        app:met_floatingLabelTextColor="@color/colorPrimaryDark" />
+
+                </LinearLayout>
+
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/card_view6"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="top"
+                android:layout_margin="5dp"
+                android:layout_marginTop="10dp"
+                app:cardBackgroundColor="@android:color/background_light"
+                card_view:cardCornerRadius="20dp"
+                card_view:cardElevation="12dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginRight="7dp"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/textTitulo6"
+                            android:layout_width="match_parent"
+                            android:layout_height="40dp"
+                            android:layout_marginLeft="5dp"
+                            android:layout_marginTop="10dp"
+                            android:gravity="center_vertical"
+                            android:text="Registro Fotográfico 2"
+                            android:textColor="#505daf"
+                            android:textSize="20dp"
+                            android:textStyle="bold" />
+                    </LinearLayout>
+
+                    <ImageView
+                        android:id="@+id/imgfoto2"
+                        android:layout_width="match_parent"
+                        android:layout_height="300dp"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_marginRight="5dp"
+                        android:background="#ffffff"
+                        android:src="@drawable/semreg" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginRight="7dp"
+                        android:gravity="center_vertical|center_horizontal"
+                        android:orientation="horizontal">
+
+                        <Button
+                            android:id="@+id/btnfoto2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_horizontal"
+                            android:background="@android:drawable/ic_menu_camera"
+                            android:gravity="center_vertical|center_horizontal"
+                            android:minWidth="48dip"
+                            android:nestedScrollingEnabled="false" />
+
+                        <Button
+                            android:id="@+id/btngaleria2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_horizontal"
+                            android:layout_marginLeft="40dp"
+                            android:background="@android:drawable/ic_menu_gallery"
+                            android:gravity="center_vertical|center_horizontal"
+                            android:minWidth="48dip"
+                            android:nestedScrollingEnabled="false" />
+
+                        <Button
+                            android:id="@+id/btnexc2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_horizontal"
+                            android:layout_marginLeft="40dp"
+                            android:background="@android:drawable/ic_menu_delete"
+                            android:gravity="center_vertical|center_horizontal"
+                            android:minWidth="48dip"
+                            android:nestedScrollingEnabled="false"
+                            android:singleLine="false" />
+                    </LinearLayout>
+
+                    <com.weiwangcn.betterspinner.library.material.MaterialBetterSpinner
+                        android:id="@+id/spnareaobra2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="25dp"
+                        android:layout_marginRight="25dp"
+                        android:layout_marginTop="8dp"
+                        android:background="#fafafa"
+                        android:hint="Etapa da Obra"
+                        app:met_floatingLabel="highlight"
+                        app:met_floatingLabelText="Etapa da Obra:"
+                        app:met_floatingLabelTextColor="@color/colorPrimaryDark" />
+
+                    <com.rengwuxian.materialedittext.MaterialEditText
+                        android:id="@+id/edtcomentariofoto2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="25dp"
+                        android:layout_marginRight="25dp"
+                        android:layout_marginTop="8dp"
+                        android:background="#fafafa"
+                        android:hint="Comentário:"
+                        android:imeActionLabel="Próximo"
+                        android:imeOptions="actionNext"
+                        android:inputType="textImeMultiLine"
+                        android:maxLength="35"
+                        app:met_floatingLabel="highlight"
+                        app:met_floatingLabelText="Comentário:"
+                        app:met_floatingLabelTextColor="@color/colorPrimaryDark" />
+
+                </LinearLayout>
+
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/card_view7"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="top"
+                android:layout_margin="5dp"
+                android:layout_marginTop="10dp"
+                app:cardBackgroundColor="@android:color/background_light"
+                card_view:cardCornerRadius="20dp"
+                card_view:cardElevation="12dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginRight="7dp"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/textTitulo7"
+                            android:layout_width="match_parent"
+                            android:layout_height="40dp"
+                            android:layout_marginLeft="5dp"
+                            android:layout_marginTop="10dp"
+                            android:gravity="center_vertical"
+                            android:text="Registro Fotográfico 3"
+                            android:textColor="#505daf"
+                            android:textSize="20dp"
+                            android:textStyle="bold" />
+                    </LinearLayout>
+
+                    <ImageView
+                        android:id="@+id/imgfoto3"
+                        android:layout_width="match_parent"
+                        android:layout_height="300dp"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_marginRight="5dp"
+                        android:background="#ffffff"
+                        android:src="@drawable/semreg" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginRight="7dp"
+                        android:gravity="center_vertical|center_horizontal"
+                        android:orientation="horizontal">
+
+                        <Button
+                            android:id="@+id/btnfoto3"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_horizontal"
+                            android:background="@android:drawable/ic_menu_camera"
+                            android:gravity="center_vertical|center_horizontal"
+                            android:minWidth="48dip"
+                            android:nestedScrollingEnabled="false" />
+
+                        <Button
+                            android:id="@+id/btngaleria3"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_horizontal"
+                            android:layout_marginLeft="40dp"
+                            android:background="@android:drawable/ic_menu_gallery"
+                            android:gravity="center_vertical|center_horizontal"
+                            android:minWidth="48dip"
+                            android:nestedScrollingEnabled="false" />
+
+                        <Button
+                            android:id="@+id/btnexc3"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_horizontal"
+                            android:layout_marginLeft="40dp"
+                            android:background="@android:drawable/ic_menu_delete"
+                            android:gravity="center_vertical|center_horizontal"
+                            android:minWidth="48dip"
+                            android:nestedScrollingEnabled="false"
+                            android:singleLine="false" />
+                    </LinearLayout>
+
+                    <com.weiwangcn.betterspinner.library.material.MaterialBetterSpinner
+                        android:id="@+id/spnareaobra3"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="25dp"
+                        android:layout_marginRight="25dp"
+                        android:layout_marginTop="8dp"
+                        android:background="#fafafa"
+                        android:hint="Etapa da Obra"
+                        app:met_floatingLabel="highlight"
+                        app:met_floatingLabelText="Etapa da Obra:"
+                        app:met_floatingLabelTextColor="@color/colorPrimaryDark" />
+
+                    <com.rengwuxian.materialedittext.MaterialEditText
+                        android:id="@+id/edtcomentariofoto3"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="25dp"
+                        android:layout_marginRight="25dp"
+                        android:layout_marginTop="8dp"
+                        android:background="#fafafa"
+                        android:hint="Comentário:"
+                        android:imeActionLabel="Próximo"
+                        android:imeOptions="actionNext"
+                        android:inputType="textImeMultiLine"
+                        android:maxLength="35"
+                        app:met_floatingLabel="highlight"
+                        app:met_floatingLabelText="Comentário:"
+                        app:met_floatingLabelTextColor="@color/colorPrimaryDark" />
+
+                </LinearLayout>
+
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/card_view8"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="top"
+                android:layout_margin="5dp"
+                android:layout_marginTop="10dp"
+                app:cardBackgroundColor="@android:color/background_light"
+                card_view:cardCornerRadius="20dp"
+                card_view:cardElevation="12dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginRight="7dp"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/textTitulo8"
+                            android:layout_width="match_parent"
+                            android:layout_height="40dp"
+                            android:layout_marginLeft="5dp"
+                            android:layout_marginTop="10dp"
+                            android:gravity="center_vertical"
+                            android:text="Registro Fotográfico 4"
+                            android:textColor="#505daf"
+                            android:textSize="20dp"
+                            android:textStyle="bold" />
+                    </LinearLayout>
+
+                    <ImageView
+                        android:id="@+id/imgfoto4"
+                        android:layout_width="match_parent"
+                        android:layout_height="300dp"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_marginRight="5dp"
+                        android:background="#ffffff"
+                        android:src="@drawable/semreg" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginRight="7dp"
+                        android:gravity="center_vertical|center_horizontal"
+                        android:orientation="horizontal">
+
+                        <Button
+                            android:id="@+id/btnfoto4"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_horizontal"
+                            android:background="@android:drawable/ic_menu_camera"
+                            android:gravity="center_vertical|center_horizontal"
+                            android:minWidth="48dip"
+                            android:nestedScrollingEnabled="false" />
+
+                        <Button
+                            android:id="@+id/btngaleria4"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_horizontal"
+                            android:layout_marginLeft="40dp"
+                            android:background="@android:drawable/ic_menu_gallery"
+                            android:gravity="center_vertical|center_horizontal"
+                            android:minWidth="48dip"
+                            android:nestedScrollingEnabled="false" />
+
+                        <Button
+                            android:id="@+id/btnexc4"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_horizontal"
+                            android:layout_marginLeft="40dp"
+                            android:background="@android:drawable/ic_menu_delete"
+                            android:gravity="center_vertical|center_horizontal"
+                            android:minWidth="48dip"
+                            android:nestedScrollingEnabled="false"
+                            android:singleLine="false" />
+                    </LinearLayout>
+
+                    <com.weiwangcn.betterspinner.library.material.MaterialBetterSpinner
+                        android:id="@+id/spnareaobra4"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="25dp"
+                        android:layout_marginRight="25dp"
+                        android:layout_marginTop="8dp"
+                        android:background="#fafafa"
+                        android:hint="Etapa da Obra"
+                        app:met_floatingLabel="highlight"
+                        app:met_floatingLabelText="Etapa da Obra:"
+                        app:met_floatingLabelTextColor="@color/colorPrimaryDark" />
+
+                    <com.rengwuxian.materialedittext.MaterialEditText
+                        android:id="@+id/edtcomentariofoto4"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="25dp"
+                        android:layout_marginRight="25dp"
+                        android:layout_marginTop="8dp"
+                        android:background="#fafafa"
+                        android:hint="Comentário:"
+                        android:imeActionLabel="Próximo"
+                        android:imeOptions="actionNext"
+                        android:inputType="textImeMultiLine"
+                        android:maxLength="35"
+                        app:met_floatingLabel="highlight"
+                        app:met_floatingLabelText="Comentário:"
+                        app:met_floatingLabelTextColor="@color/colorPrimaryDark" />
+
+                </LinearLayout>
+
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/card_view9"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="top"
+                android:layout_margin="5dp"
+                android:layout_marginTop="10dp"
+                app:cardBackgroundColor="@android:color/background_light"
+                card_view:cardCornerRadius="20dp"
+                card_view:cardElevation="12dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginRight="7dp"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/textTitulo9"
+                            android:layout_width="match_parent"
+                            android:layout_height="40dp"
+                            android:layout_marginLeft="5dp"
+                            android:layout_marginTop="10dp"
+                            android:gravity="center_vertical"
+                            android:text="Registro Fotográfico 5"
+                            android:textColor="#505daf"
+                            android:textSize="20dp"
+                            android:textStyle="bold" />
+                    </LinearLayout>
+
+                    <ImageView
+                        android:id="@+id/imgfoto5"
+                        android:layout_width="match_parent"
+                        android:layout_height="300dp"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_marginRight="5dp"
+                        android:background="#ffffff"
+                        android:src="@drawable/semreg" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginRight="7dp"
+                        android:gravity="center_vertical|center_horizontal"
+                        android:orientation="horizontal">
+
+                        <Button
+                            android:id="@+id/btnfoto5"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_horizontal"
+                            android:background="@android:drawable/ic_menu_camera"
+                            android:gravity="center_vertical|center_horizontal"
+                            android:minWidth="48dip"
+                            android:nestedScrollingEnabled="false" />
+
+                        <Button
+                            android:id="@+id/btngaleria5"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_horizontal"
+                            android:layout_marginLeft="40dp"
+                            android:background="@android:drawable/ic_menu_gallery"
+                            android:gravity="center_vertical|center_horizontal"
+                            android:minWidth="48dip"
+                            android:nestedScrollingEnabled="false" />
+
+                        <Button
+                            android:id="@+id/btnexc5"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_horizontal"
+                            android:layout_marginLeft="40dp"
+                            android:background="@android:drawable/ic_menu_delete"
+                            android:gravity="center_vertical|center_horizontal"
+                            android:minWidth="48dip"
+                            android:nestedScrollingEnabled="false"
+                            android:singleLine="false" />
+                    </LinearLayout>
+
+                    <com.weiwangcn.betterspinner.library.material.MaterialBetterSpinner
+                        android:id="@+id/spnareaobra5"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="25dp"
+                        android:layout_marginRight="25dp"
+                        android:layout_marginTop="8dp"
+                        android:background="#fafafa"
+                        android:hint="Etapa da Obra"
+                        app:met_floatingLabel="highlight"
+                        app:met_floatingLabelText="Etapa da Obra:"
+                        app:met_floatingLabelTextColor="@color/colorPrimaryDark" />
+
+                    <com.rengwuxian.materialedittext.MaterialEditText
+                        android:id="@+id/edtcomentariofoto5"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="25dp"
+                        android:layout_marginRight="25dp"
+                        android:layout_marginTop="8dp"
+                        android:background="#fafafa"
+                        android:hint="Comentário:"
+                        android:imeActionLabel="Próximo"
+                        android:imeOptions="actionNext"
+                        android:inputType="textImeMultiLine"
+                        android:maxLength="35"
+                        app:met_floatingLabel="highlight"
+                        app:met_floatingLabelText="Comentário:"
+                        app:met_floatingLabelTextColor="@color/colorPrimaryDark" />
+
+                </LinearLayout>
+
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/card_view10"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="top"
+                android:layout_margin="5dp"
+                android:layout_marginTop="10dp"
+                app:cardBackgroundColor="@android:color/background_light"
+                card_view:cardCornerRadius="20dp"
+                card_view:cardElevation="12dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginRight="7dp"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/textTitulo10"
+                            android:layout_width="match_parent"
+                            android:layout_height="40dp"
+                            android:layout_marginLeft="5dp"
+                            android:layout_marginTop="10dp"
+                            android:gravity="center_vertical"
+                            android:text="Registro Fotográfico 6"
+                            android:textColor="#505daf"
+                            android:textSize="20dp"
+                            android:textStyle="bold" />
+                    </LinearLayout>
+
+                    <ImageView
+                        android:id="@+id/imgfoto6"
+                        android:layout_width="match_parent"
+                        android:layout_height="300dp"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_marginRight="5dp"
+                        android:background="#ffffff"
+                        android:src="@drawable/semreg" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginRight="7dp"
+                        android:gravity="center_vertical|center_horizontal"
+                        android:orientation="horizontal">
+
+                        <Button
+                            android:id="@+id/btnfoto6"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_horizontal"
+                            android:background="@android:drawable/ic_menu_camera"
+                            android:gravity="center_vertical|center_horizontal"
+                            android:minWidth="48dip"
+                            android:nestedScrollingEnabled="false" />
+
+                        <Button
+                            android:id="@+id/btngaleria6"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_horizontal"
+                            android:layout_marginLeft="40dp"
+                            android:background="@android:drawable/ic_menu_gallery"
+                            android:gravity="center_vertical|center_horizontal"
+                            android:minWidth="48dip"
+                            android:nestedScrollingEnabled="false" />
+
+                        <Button
+                            android:id="@+id/btnexc6"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_horizontal"
+                            android:layout_marginLeft="40dp"
+                            android:background="@android:drawable/ic_menu_delete"
+                            android:gravity="center_vertical|center_horizontal"
+                            android:minWidth="48dip"
+                            android:nestedScrollingEnabled="false"
+                            android:singleLine="false" />
+                    </LinearLayout>
+
+                    <com.weiwangcn.betterspinner.library.material.MaterialBetterSpinner
+                        android:id="@+id/spnareaobra6"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="25dp"
+                        android:layout_marginRight="25dp"
+                        android:layout_marginTop="8dp"
+                        android:background="#fafafa"
+                        android:hint="Etapa da Obra"
+                        app:met_floatingLabel="highlight"
+                        app:met_floatingLabelText="Etapa da Obra:"
+                        app:met_floatingLabelTextColor="@color/colorPrimaryDark" />
+
+                    <com.rengwuxian.materialedittext.MaterialEditText
+                        android:id="@+id/edtcomentariofoto6"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="25dp"
+                        android:layout_marginRight="25dp"
+                        android:layout_marginTop="8dp"
+                        android:background="#fafafa"
+                        android:hint="Comentário:"
+                        android:imeActionLabel="Próximo"
+                        android:imeOptions="actionNext"
+                        android:inputType="textImeMultiLine"
+                        android:maxLength="35"
+                        app:met_floatingLabel="highlight"
+                        app:met_floatingLabelText="Comentário:"
+                        app:met_floatingLabelTextColor="@color/colorPrimaryDark" />
+
+                </LinearLayout>
+
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/card_view11"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="top"
+                android:layout_margin="5dp"
+                android:layout_marginTop="10dp"
+                app:cardBackgroundColor="@android:color/background_light"
+                card_view:cardCornerRadius="20dp"
+                card_view:cardElevation="12dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginRight="7dp"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/textTitulo11"
+                            android:layout_width="match_parent"
+                            android:layout_height="40dp"
+                            android:layout_marginLeft="5dp"
+                            android:layout_marginTop="10dp"
+                            android:gravity="center_vertical"
+                            android:text="Registro Fotográfico 7"
+                            android:textColor="#505daf"
+                            android:textSize="20dp"
+                            android:textStyle="bold" />
+                    </LinearLayout>
+
+                    <ImageView
+                        android:id="@+id/imgfoto7"
+                        android:layout_width="match_parent"
+                        android:layout_height="300dp"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_marginRight="5dp"
+                        android:background="#ffffff"
+                        android:src="@drawable/semreg" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginRight="7dp"
+                        android:gravity="center_vertical|center_horizontal"
+                        android:orientation="horizontal">
+
+                        <Button
+                            android:id="@+id/btnfoto7"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_horizontal"
+                            android:background="@android:drawable/ic_menu_camera"
+                            android:gravity="center_vertical|center_horizontal"
+                            android:minWidth="48dip"
+                            android:nestedScrollingEnabled="false" />
+
+                        <Button
+                            android:id="@+id/btngaleria7"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_horizontal"
+                            android:layout_marginLeft="40dp"
+                            android:background="@android:drawable/ic_menu_gallery"
+                            android:gravity="center_vertical|center_horizontal"
+                            android:minWidth="48dip"
+                            android:nestedScrollingEnabled="false" />
+
+                        <Button
+                            android:id="@+id/btnexc7"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_horizontal"
+                            android:layout_marginLeft="40dp"
+                            android:background="@android:drawable/ic_menu_delete"
+                            android:gravity="center_vertical|center_horizontal"
+                            android:minWidth="48dip"
+                            android:nestedScrollingEnabled="false"
+                            android:singleLine="false" />
+                    </LinearLayout>
+
+                    <com.weiwangcn.betterspinner.library.material.MaterialBetterSpinner
+                        android:id="@+id/spnareaobra7"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="25dp"
+                        android:layout_marginRight="25dp"
+                        android:layout_marginTop="8dp"
+                        android:background="#fafafa"
+                        android:hint="Etapa da Obra"
+                        app:met_floatingLabel="highlight"
+                        app:met_floatingLabelText="Etapa da Obra:"
+                        app:met_floatingLabelTextColor="@color/colorPrimaryDark" />
+
+                    <com.rengwuxian.materialedittext.MaterialEditText
+                        android:id="@+id/edtcomentariofoto7"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="25dp"
+                        android:layout_marginRight="25dp"
+                        android:layout_marginTop="8dp"
+                        android:background="#fafafa"
+                        android:hint="Comentário:"
+                        android:imeActionLabel="Próximo"
+                        android:imeOptions="actionNext"
+                        android:inputType="textImeMultiLine"
+                        android:maxLength="35"
+                        app:met_floatingLabel="highlight"
+                        app:met_floatingLabelText="Comentário:"
+                        app:met_floatingLabelTextColor="@color/colorPrimaryDark" />
+
+                </LinearLayout>
+
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/card_view12"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="top"
+                android:layout_margin="5dp"
+                android:layout_marginTop="10dp"
+                app:cardBackgroundColor="@android:color/background_light"
+                card_view:cardCornerRadius="20dp"
+                card_view:cardElevation="12dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginRight="7dp"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/textTitulo12"
+                            android:layout_width="match_parent"
+                            android:layout_height="40dp"
+                            android:layout_marginLeft="5dp"
+                            android:layout_marginTop="10dp"
+                            android:gravity="center_vertical"
+                            android:text="Registro Fotográfico 8"
+                            android:textColor="#505daf"
+                            android:textSize="20dp"
+                            android:textStyle="bold" />
+                    </LinearLayout>
+
+                    <ImageView
+                        android:id="@+id/imgfoto8"
+                        android:layout_width="match_parent"
+                        android:layout_height="300dp"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_marginRight="5dp"
+                        android:background="#ffffff"
+                        android:src="@drawable/semreg" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginRight="7dp"
+                        android:gravity="center_vertical|center_horizontal"
+                        android:orientation="horizontal">
+
+                        <Button
+                            android:id="@+id/btnfoto8"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_horizontal"
+                            android:background="@android:drawable/ic_menu_camera"
+                            android:gravity="center_vertical|center_horizontal"
+                            android:minWidth="48dip"
+                            android:nestedScrollingEnabled="false" />
+
+                        <Button
+                            android:id="@+id/btngaleria8"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_horizontal"
+                            android:layout_marginLeft="40dp"
+                            android:background="@android:drawable/ic_menu_gallery"
+                            android:gravity="center_vertical|center_horizontal"
+                            android:minWidth="48dip"
+                            android:nestedScrollingEnabled="false" />
+
+                        <Button
+                            android:id="@+id/btnexc8"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_horizontal"
+                            android:layout_marginLeft="40dp"
+                            android:background="@android:drawable/ic_menu_delete"
+                            android:gravity="center_vertical|center_horizontal"
+                            android:minWidth="48dip"
+                            android:nestedScrollingEnabled="false"
+                            android:singleLine="false" />
+                    </LinearLayout>
+
+                    <com.weiwangcn.betterspinner.library.material.MaterialBetterSpinner
+                        android:id="@+id/spnareaobra8"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="25dp"
+                        android:layout_marginRight="25dp"
+                        android:layout_marginTop="8dp"
+                        android:background="#fafafa"
+                        android:hint="Etapa da Obra"
+                        app:met_floatingLabel="highlight"
+                        app:met_floatingLabelText="Etapa da Obra:"
+                        app:met_floatingLabelTextColor="@color/colorPrimaryDark" />
+
+                    <com.rengwuxian.materialedittext.MaterialEditText
+                        android:id="@+id/edtcomentariofoto8"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="25dp"
+                        android:layout_marginRight="25dp"
+                        android:layout_marginTop="8dp"
+                        android:background="#fafafa"
+                        android:hint="Comentário:"
+                        android:imeActionLabel="Próximo"
+                        android:imeOptions="actionNext"
+                        android:inputType="textImeMultiLine"
+                        android:maxLength="35"
+                        app:met_floatingLabel="highlight"
+                        app:met_floatingLabelText="Comentário:"
+                        app:met_floatingLabelTextColor="@color/colorPrimaryDark" />
+
+                </LinearLayout>
+
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/card_view13"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="top"
+                android:layout_margin="5dp"
+                android:layout_marginTop="10dp"
+                app:cardBackgroundColor="@android:color/background_light"
+                card_view:cardCornerRadius="20dp"
+                card_view:cardElevation="12dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginRight="7dp"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/textTitulo13"
+                            android:layout_width="match_parent"
+                            android:layout_height="40dp"
+                            android:layout_marginLeft="5dp"
+                            android:layout_marginTop="10dp"
+                            android:gravity="center_vertical"
+                            android:text="Registro Fotográfico 9"
+                            android:textColor="#505daf"
+                            android:textSize="20dp"
+                            android:textStyle="bold" />
+                    </LinearLayout>
+
+                    <ImageView
+                        android:id="@+id/imgfoto9"
+                        android:layout_width="match_parent"
+                        android:layout_height="300dp"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_marginRight="5dp"
+                        android:background="#ffffff"
+                        android:src="@drawable/semreg" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginRight="7dp"
+                        android:gravity="center_vertical|center_horizontal"
+                        android:orientation="horizontal">
+
+                        <Button
+                            android:id="@+id/btnfoto9"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_horizontal"
+                            android:background="@android:drawable/ic_menu_camera"
+                            android:gravity="center_vertical|center_horizontal"
+                            android:minWidth="48dip"
+                            android:nestedScrollingEnabled="false" />
+
+                        <Button
+                            android:id="@+id/btngaleria9"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_horizontal"
+                            android:layout_marginLeft="40dp"
+                            android:background="@android:drawable/ic_menu_gallery"
+                            android:gravity="center_vertical|center_horizontal"
+                            android:minWidth="48dip"
+                            android:nestedScrollingEnabled="false" />
+
+                        <Button
+                            android:id="@+id/btnexc9"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_horizontal"
+                            android:layout_marginLeft="40dp"
+                            android:background="@android:drawable/ic_menu_delete"
+                            android:gravity="center_vertical|center_horizontal"
+                            android:minWidth="48dip"
+                            android:nestedScrollingEnabled="false"
+                            android:singleLine="false" />
+                    </LinearLayout>
+
+                    <com.weiwangcn.betterspinner.library.material.MaterialBetterSpinner
+                        android:id="@+id/spnareaobra9"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="25dp"
+                        android:layout_marginRight="25dp"
+                        android:layout_marginTop="8dp"
+                        android:background="#fafafa"
+                        android:hint="Etapa da Obra"
+                        app:met_floatingLabel="highlight"
+                        app:met_floatingLabelText="Etapa da Obra:"
+                        app:met_floatingLabelTextColor="@color/colorPrimaryDark" />
+
+                    <com.rengwuxian.materialedittext.MaterialEditText
+                        android:id="@+id/edtcomentariofoto9"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="25dp"
+                        android:layout_marginRight="25dp"
+                        android:layout_marginTop="8dp"
+                        android:background="#fafafa"
+                        android:hint="Comentário:"
+                        android:imeActionLabel="Próximo"
+                        android:imeOptions="actionNext"
+                        android:inputType="textImeMultiLine"
+                        android:maxLength="35"
+                        app:met_floatingLabel="highlight"
+                        app:met_floatingLabelText="Comentário:"
+                        app:met_floatingLabelTextColor="@color/colorPrimaryDark" />
+
+                </LinearLayout>
+
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/card_view14"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="top"
+                android:layout_margin="5dp"
+                android:layout_marginTop="10dp"
+                app:cardBackgroundColor="@android:color/background_light"
+                card_view:cardCornerRadius="20dp"
+                card_view:cardElevation="12dp">
+
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginRight="7dp"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/textTitulo14"
+                            android:layout_width="match_parent"
+                            android:layout_height="40dp"
+                            android:layout_marginLeft="5dp"
+                            android:layout_marginTop="10dp"
+                            android:gravity="center_vertical"
+                            android:text="Registro Fotográfico 10"
+                            android:textColor="#505daf"
+                            android:textSize="20dp"
+                            android:textStyle="bold" />
+                    </LinearLayout>
+
+                    <ImageView
+                        android:id="@+id/imgfoto10"
+                        android:layout_width="match_parent"
+                        android:layout_height="300dp"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_marginRight="5dp"
+                        android:background="#ffffff"
+                        android:src="@drawable/semreg" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginRight="7dp"
+                        android:gravity="center_vertical|center_horizontal"
+                        android:orientation="horizontal">
+
+                        <Button
+                            android:id="@+id/btnfoto10"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_horizontal"
+                            android:background="@android:drawable/ic_menu_camera"
+                            android:gravity="center_vertical|center_horizontal"
+                            android:minWidth="48dip"
+                            android:nestedScrollingEnabled="false" />
+
+                        <Button
+                            android:id="@+id/btngaleria10"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_horizontal"
+                            android:layout_marginLeft="40dp"
+                            android:background="@android:drawable/ic_menu_gallery"
+                            android:gravity="center_vertical|center_horizontal"
+                            android:minWidth="48dip"
+                            android:nestedScrollingEnabled="false" />
+
+                        <Button
+                            android:id="@+id/btnexc10"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_horizontal"
+                            android:layout_marginLeft="40dp"
+                            android:background="@android:drawable/ic_menu_delete"
+                            android:gravity="center_vertical|center_horizontal"
+                            android:minWidth="48dip"
+                            android:nestedScrollingEnabled="false"
+                            android:singleLine="false" />
+                    </LinearLayout>
+
+                    <com.weiwangcn.betterspinner.library.material.MaterialBetterSpinner
+                        android:id="@+id/spnareaobra10"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="25dp"
+                        android:layout_marginRight="25dp"
+                        android:layout_marginTop="8dp"
+                        android:background="#fafafa"
+                        android:hint="Etapa da Obra"
+                        app:met_floatingLabel="highlight"
+                        app:met_floatingLabelText="Etapa da Obra:"
+                        app:met_floatingLabelTextColor="@color/colorPrimaryDark" />
+
+                    <com.rengwuxian.materialedittext.MaterialEditText
+                        android:id="@+id/edtcomentariofoto10"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="25dp"
+                        android:layout_marginRight="25dp"
+                        android:layout_marginTop="8dp"
+                        android:background="#fafafa"
+                        android:hint="Comentário:"
+                        android:imeActionLabel="Próximo"
+                        android:imeOptions="actionNext"
+                        android:inputType="textImeMultiLine"
+                        android:maxLength="35"
+                        app:met_floatingLabel="highlight"
+                        app:met_floatingLabelText="Comentário:"
+                        app:met_floatingLabelTextColor="@color/colorPrimaryDark" />
+
+                </LinearLayout>
+
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/card_view15"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="top"
+                android:layout_margin="5dp"
+                android:layout_marginTop="10dp"
+                app:cardBackgroundColor="@android:color/background_light"
+                card_view:cardCornerRadius="20dp"
+                card_view:cardElevation="12dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginRight="7dp"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/textTitulo15"
+                            android:layout_width="match_parent"
+                            android:layout_height="40dp"
+                            android:layout_marginLeft="5dp"
+                            android:layout_marginTop="10dp"
+                            android:gravity="center_vertical"
+                            android:text="Registro Fotográfico 11"
+                            android:textColor="#505daf"
+                            android:textSize="20dp"
+                            android:textStyle="bold" />
+                    </LinearLayout>
+
+                    <ImageView
+                        android:id="@+id/imgfoto11"
+                        android:layout_width="match_parent"
+                        android:layout_height="300dp"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_marginRight="5dp"
+                        android:background="#ffffff"
+                        android:src="@drawable/semreg" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginRight="7dp"
+                        android:gravity="center_vertical|center_horizontal"
+                        android:orientation="horizontal">
+
+                        <Button
+                            android:id="@+id/btnfoto11"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_horizontal"
+                            android:background="@android:drawable/ic_menu_camera"
+                            android:gravity="center_vertical|center_horizontal"
+                            android:minWidth="48dip"
+                            android:nestedScrollingEnabled="false" />
+
+                        <Button
+                            android:id="@+id/btngaleria11"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_horizontal"
+                            android:layout_marginLeft="40dp"
+                            android:background="@android:drawable/ic_menu_gallery"
+                            android:gravity="center_vertical|center_horizontal"
+                            android:minWidth="48dip"
+                            android:nestedScrollingEnabled="false" />
+
+                        <Button
+                            android:id="@+id/btnexc11"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_horizontal"
+                            android:layout_marginLeft="40dp"
+                            android:background="@android:drawable/ic_menu_delete"
+                            android:gravity="center_vertical|center_horizontal"
+                            android:minWidth="48dip"
+                            android:nestedScrollingEnabled="false"
+                            android:singleLine="false" />
+                    </LinearLayout>
+
+                    <com.weiwangcn.betterspinner.library.material.MaterialBetterSpinner
+                        android:id="@+id/spnareaobra11"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="25dp"
+                        android:layout_marginRight="25dp"
+                        android:layout_marginTop="8dp"
+                        android:background="#fafafa"
+                        android:hint="Etapa da Obra"
+                        app:met_floatingLabel="highlight"
+                        app:met_floatingLabelText="Etapa da Obra:"
+                        app:met_floatingLabelTextColor="@color/colorPrimaryDark" />
+
+                    <com.rengwuxian.materialedittext.MaterialEditText
+                        android:id="@+id/edtcomentariofoto11"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="25dp"
+                        android:layout_marginRight="25dp"
+                        android:layout_marginTop="8dp"
+                        android:background="#fafafa"
+                        android:hint="Comentário:"
+                        android:imeActionLabel="Próximo"
+                        android:imeOptions="actionNext"
+                        android:inputType="textImeMultiLine"
+                        android:maxLength="35"
+                        app:met_floatingLabel="highlight"
+                        app:met_floatingLabelText="Comentário:"
+                        app:met_floatingLabelTextColor="@color/colorPrimaryDark" />
+
+                </LinearLayout>
+
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/card_view16"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="top"
+                android:layout_margin="5dp"
+                android:layout_marginTop="10dp"
+                app:cardBackgroundColor="@android:color/background_light"
+                card_view:cardCornerRadius="20dp"
+                card_view:cardElevation="12dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginRight="7dp"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/textTitulo16"
+                            android:layout_width="match_parent"
+                            android:layout_height="40dp"
+                            android:layout_marginLeft="5dp"
+                            android:layout_marginTop="10dp"
+                            android:gravity="center_vertical"
+                            android:text="Registro Fotográfico 12"
+                            android:textColor="#505daf"
+                            android:textSize="20dp"
+                            android:textStyle="bold" />
+                    </LinearLayout>
+
+                    <ImageView
+                        android:id="@+id/imgfoto12"
+                        android:layout_width="match_parent"
+                        android:layout_height="300dp"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_marginRight="5dp"
+                        android:background="#ffffff"
+                        android:src="@drawable/semreg" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginRight="7dp"
+                        android:gravity="center_vertical|center_horizontal"
+                        android:orientation="horizontal">
+
+                        <Button
+                            android:id="@+id/btnfoto12"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_horizontal"
+                            android:background="@android:drawable/ic_menu_camera"
+                            android:gravity="center_vertical|center_horizontal"
+                            android:minWidth="48dip"
+                            android:nestedScrollingEnabled="false" />
+
+                        <Button
+                            android:id="@+id/btngaleria12"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_horizontal"
+                            android:layout_marginLeft="40dp"
+                            android:background="@android:drawable/ic_menu_gallery"
+                            android:gravity="center_vertical|center_horizontal"
+                            android:minWidth="48dip"
+                            android:nestedScrollingEnabled="false" />
+
+                        <Button
+                            android:id="@+id/btnexc12"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_horizontal"
+                            android:layout_marginLeft="40dp"
+                            android:background="@android:drawable/ic_menu_delete"
+                            android:gravity="center_vertical|center_horizontal"
+                            android:minWidth="48dip"
+                            android:nestedScrollingEnabled="false"
+                            android:singleLine="false" />
+                    </LinearLayout>
+
+                    <com.weiwangcn.betterspinner.library.material.MaterialBetterSpinner
+                        android:id="@+id/spnareaobra12"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="25dp"
+                        android:layout_marginRight="25dp"
+                        android:layout_marginTop="8dp"
+                        android:background="#fafafa"
+                        android:hint="Etapa da Obra"
+                        app:met_floatingLabel="highlight"
+                        app:met_floatingLabelText="Etapa da Obra:"
+                        app:met_floatingLabelTextColor="@color/colorPrimaryDark" />
+
+                    <com.rengwuxian.materialedittext.MaterialEditText
+                        android:id="@+id/edtcomentariofoto12"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="25dp"
+                        android:layout_marginRight="25dp"
+                        android:layout_marginTop="8dp"
+                        android:background="#fafafa"
+                        android:hint="Comentário:"
+                        android:imeActionLabel="Próximo"
+                        android:imeOptions="actionNext"
+                        android:inputType="textImeMultiLine"
+                        android:maxLength="35"
+                        app:met_floatingLabel="highlight"
+                        app:met_floatingLabelText="Comentário:"
+                        app:met_floatingLabelTextColor="@color/colorPrimaryDark" />
+
+                </LinearLayout>
+
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/card_view17"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="top"
+                android:layout_margin="5dp"
+                android:layout_marginTop="10dp"
+                app:cardBackgroundColor="@android:color/background_light"
+                card_view:cardCornerRadius="20dp"
+                card_view:cardElevation="12dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginRight="7dp"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/textTitulo17"
+                            android:layout_width="match_parent"
+                            android:layout_height="40dp"
+                            android:layout_marginLeft="5dp"
+                            android:layout_marginTop="10dp"
+                            android:gravity="center_vertical"
+                            android:text="Registro Fotográfico 13"
+                            android:textColor="#505daf"
+                            android:textSize="20dp"
+                            android:textStyle="bold" />
+                    </LinearLayout>
+
+                    <ImageView
+                        android:id="@+id/imgfoto13"
+                        android:layout_width="match_parent"
+                        android:layout_height="300dp"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_marginRight="5dp"
+                        android:background="#ffffff"
+                        android:src="@drawable/semreg" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginRight="7dp"
+                        android:gravity="center_vertical|center_horizontal"
+                        android:orientation="horizontal">
+
+                        <Button
+                            android:id="@+id/btnfoto13"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_horizontal"
+                            android:background="@android:drawable/ic_menu_camera"
+                            android:gravity="center_vertical|center_horizontal"
+                            android:minWidth="48dip"
+                            android:nestedScrollingEnabled="false" />
+
+                        <Button
+                            android:id="@+id/btngaleria13"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_horizontal"
+                            android:layout_marginLeft="40dp"
+                            android:background="@android:drawable/ic_menu_gallery"
+                            android:gravity="center_vertical|center_horizontal"
+                            android:minWidth="48dip"
+                            android:nestedScrollingEnabled="false" />
+
+                        <Button
+                            android:id="@+id/btnexc13"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_horizontal"
+                            android:layout_marginLeft="40dp"
+                            android:background="@android:drawable/ic_menu_delete"
+                            android:gravity="center_vertical|center_horizontal"
+                            android:minWidth="48dip"
+                            android:nestedScrollingEnabled="false"
+                            android:singleLine="false" />
+                    </LinearLayout>
+
+                    <com.weiwangcn.betterspinner.library.material.MaterialBetterSpinner
+                        android:id="@+id/spnareaobra13"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="25dp"
+                        android:layout_marginRight="25dp"
+                        android:layout_marginTop="8dp"
+                        android:background="#fafafa"
+                        android:hint="Etapa da Obra"
+                        app:met_floatingLabel="highlight"
+                        app:met_floatingLabelText="Etapa da Obra:"
+                        app:met_floatingLabelTextColor="@color/colorPrimaryDark" />
+
+                    <com.rengwuxian.materialedittext.MaterialEditText
+                        android:id="@+id/edtcomentariofoto13"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="25dp"
+                        android:layout_marginRight="25dp"
+                        android:layout_marginTop="8dp"
+                        android:background="#fafafa"
+                        android:hint="Comentário:"
+                        android:imeActionLabel="Próximo"
+                        android:imeOptions="actionNext"
+                        android:inputType="textImeMultiLine"
+                        android:maxLength="35"
+                        app:met_floatingLabel="highlight"
+                        app:met_floatingLabelText="Comentário:"
+                        app:met_floatingLabelTextColor="@color/colorPrimaryDark" />
+
+                </LinearLayout>
+
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/card_view18"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="top"
+                android:layout_margin="5dp"
+                android:layout_marginTop="10dp"
+                app:cardBackgroundColor="@android:color/background_light"
+                card_view:cardCornerRadius="20dp"
+                card_view:cardElevation="12dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginRight="7dp"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/textTitulo18"
+                            android:layout_width="match_parent"
+                            android:layout_height="40dp"
+                            android:layout_marginLeft="5dp"
+                            android:layout_marginTop="10dp"
+                            android:gravity="center_vertical"
+                            android:text="Registro Fotográfico 14"
+                            android:textColor="#505daf"
+                            android:textSize="20dp"
+                            android:textStyle="bold" />
+                    </LinearLayout>
+
+                    <ImageView
+                        android:id="@+id/imgfoto14"
+                        android:layout_width="match_parent"
+                        android:layout_height="300dp"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_marginRight="5dp"
+                        android:background="#ffffff"
+                        android:src="@drawable/semreg" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginRight="7dp"
+                        android:gravity="center_vertical|center_horizontal"
+                        android:orientation="horizontal">
+
+                        <Button
+                            android:id="@+id/btnfoto14"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_horizontal"
+                            android:background="@android:drawable/ic_menu_camera"
+                            android:gravity="center_vertical|center_horizontal"
+                            android:minWidth="48dip"
+                            android:nestedScrollingEnabled="false" />
+
+                        <Button
+                            android:id="@+id/btngaleria14"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_horizontal"
+                            android:layout_marginLeft="40dp"
+                            android:background="@android:drawable/ic_menu_gallery"
+                            android:gravity="center_vertical|center_horizontal"
+                            android:minWidth="48dip"
+                            android:nestedScrollingEnabled="false" />
+
+                        <Button
+                            android:id="@+id/btnexc14"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_horizontal"
+                            android:layout_marginLeft="40dp"
+                            android:background="@android:drawable/ic_menu_delete"
+                            android:gravity="center_vertical|center_horizontal"
+                            android:minWidth="48dip"
+                            android:nestedScrollingEnabled="false"
+                            android:singleLine="false" />
+                    </LinearLayout>
+
+                    <com.weiwangcn.betterspinner.library.material.MaterialBetterSpinner
+                        android:id="@+id/spnareaobra14"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="25dp"
+                        android:layout_marginRight="25dp"
+                        android:layout_marginTop="8dp"
+                        android:background="#fafafa"
+                        android:hint="Etapa da Obra"
+                        app:met_floatingLabel="highlight"
+                        app:met_floatingLabelText="Etapa da Obra:"
+                        app:met_floatingLabelTextColor="@color/colorPrimaryDark" />
+
+                    <com.rengwuxian.materialedittext.MaterialEditText
+                        android:id="@+id/edtcomentariofoto14"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="25dp"
+                        android:layout_marginRight="25dp"
+                        android:layout_marginTop="8dp"
+                        android:background="#fafafa"
+                        android:hint="Comentário:"
+                        android:imeActionLabel="Próximo"
+                        android:imeOptions="actionNext"
+                        android:inputType="textImeMultiLine"
+                        android:maxLength="35"
+                        app:met_floatingLabel="highlight"
+                        app:met_floatingLabelText="Comentário:"
+                        app:met_floatingLabelTextColor="@color/colorPrimaryDark" />
+
+                </LinearLayout>
+
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/card_view19"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="top"
+                android:layout_margin="5dp"
+                android:layout_marginTop="10dp"
+                app:cardBackgroundColor="@android:color/background_light"
+                card_view:cardCornerRadius="20dp"
+                card_view:cardElevation="12dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginRight="7dp"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/textTitulo19"
+                            android:layout_width="match_parent"
+                            android:layout_height="40dp"
+                            android:layout_marginLeft="5dp"
+                            android:layout_marginTop="10dp"
+                            android:gravity="center_vertical"
+                            android:text="Registro Fotográfico 15"
+                            android:textColor="#505daf"
+                            android:textSize="20dp"
+                            android:textStyle="bold" />
+                    </LinearLayout>
+
+                    <ImageView
+                        android:id="@+id/imgfoto15"
+                        android:layout_width="match_parent"
+                        android:layout_height="300dp"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_marginRight="5dp"
+                        android:background="#ffffff"
+                        android:src="@drawable/semreg" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginRight="7dp"
+                        android:gravity="center_vertical|center_horizontal"
+                        android:orientation="horizontal">
+
+                        <Button
+                            android:id="@+id/btnfoto15"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_horizontal"
+                            android:background="@android:drawable/ic_menu_camera"
+                            android:gravity="center_vertical|center_horizontal"
+                            android:minWidth="48dip"
+                            android:nestedScrollingEnabled="false" />
+
+                        <Button
+                            android:id="@+id/btngaleria15"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_horizontal"
+                            android:layout_marginLeft="40dp"
+                            android:background="@android:drawable/ic_menu_gallery"
+                            android:gravity="center_vertical|center_horizontal"
+                            android:minWidth="48dip"
+                            android:nestedScrollingEnabled="false" />
+
+                        <Button
+                            android:id="@+id/btnexc15"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_horizontal"
+                            android:layout_marginLeft="40dp"
+                            android:background="@android:drawable/ic_menu_delete"
+                            android:gravity="center_vertical|center_horizontal"
+                            android:minWidth="48dip"
+                            android:nestedScrollingEnabled="false"
+                            android:singleLine="false" />
+                    </LinearLayout>
+
+                    <com.weiwangcn.betterspinner.library.material.MaterialBetterSpinner
+                        android:id="@+id/spnareaobra15"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="25dp"
+                        android:layout_marginRight="25dp"
+                        android:layout_marginTop="8dp"
+                        android:background="#fafafa"
+                        android:hint="Etapa da Obra"
+                        app:met_floatingLabel="highlight"
+                        app:met_floatingLabelText="Etapa da Obra:"
+                        app:met_floatingLabelTextColor="@color/colorPrimaryDark" />
+
+                    <com.rengwuxian.materialedittext.MaterialEditText
+                        android:id="@+id/edtcomentariofoto15"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="60dp"
+                        android:layout_marginLeft="25dp"
+                        android:layout_marginRight="25dp"
+                        android:layout_marginTop="8dp"
+                        android:background="#fafafa"
+                        android:hint="Comentário:"
+                        android:imeActionLabel="Próximo"
+                        android:imeOptions="actionNext"
+                        android:inputType="textImeMultiLine"
+                        android:maxLength="35"
+                        app:met_floatingLabel="highlight"
+                        app:met_floatingLabelText="Comentário:"
+                        app:met_floatingLabelTextColor="@color/colorPrimaryDark" />
+
+                </LinearLayout>
+
+            </android.support.v7.widget.CardView>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</RelativeLayout>

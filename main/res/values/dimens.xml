@@ -1,0 +1,9 @@
+<resources>
+    <dimen name="activity_horizontal_margin">5dp</dimen>
+    <dimen name="activity_vertical_margin">5dp</dimen>
+    <dimen name="fab_margin">16dp</dimen>
+    <dimen name="fab2_horizontal_margin">76dp</dimen>
+    <dimen name="fab2_vertical_margin">16dp</dimen>
+    <dimen name="fab3_horizontal_margin">136dp</dimen>
+    <dimen name="fab3_vertical_margin">16dp</dimen>
+</resources>
